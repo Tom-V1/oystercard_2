@@ -38,20 +38,20 @@ describe Oystercard do
 
     before {subject.top_up(Oystercard::MAXIMUM_BALANCE)}
 
-    it "is initially not in a journey" do 
-      expect(subject).not_to be_in_journey
-    end 
+    # it "is initially not in a journey" do 
+    #   expect(subject).not_to be_in_journey
+    # end 
 
-    it "can touch in" do
-      subject.touch_in(entry_station)
-      expect(subject).to be_in_journey
-    end
+    # it "can touch in" do
+    #   subject.touch_in(entry_station)
+    #   expect(subject).to be_in_journey
+    # end
 
-    it "can touch out" do
-      subject.touch_in(entry_station)
-      subject.touch_out(exit_station)
-      expect(subject).not_to be_in_journey
-    end
+    # it "can touch out" do
+    #   subject.touch_in(entry_station)
+    #   subject.touch_out(exit_station)
+    #   expect(subject).not_to be_in_journey
+    # end
 
   end 
     # ==================================
